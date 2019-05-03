@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2019</title>
+        <meta charset="utf-8">
+
+        <script>   
+            var arr = ['Teste do Mestre', 4, 1,'2', 3, 'robson', 4, 5];    
+
+            /* 
+             * A função every percorre por todo o array e retorna
+             * true se todos os elementos forem numeros.
+             *
+             * Essa função recebe uma outra função de callback e
+             * pode receber por parâmetro o elemento que é o que está
+             * na posição do array, o index do array e o objeto que é
+             * o próprio array.
+             */
+            // var soNumeros = arr.every(function(element){
+            //     return typeof element === 'number';
+            // });          
+
+            // console.log('Tem apenas números? '+soNumeros);
+
+            /*
+             * A função filter() retorna outro array apenas
+             * com os objetos que pessam pela condição. Também recebe
+             * uma função e executa a função para cada elemento
+             * desse array.
+             */
+
+            // var apenasNumeros = arr.filter(function(elementos, index, arr){
+            //     return typeof elementos === 'number';
+            // });
+
+            // console.log('Filtrando por apenas números: '+apenasNumeros);
+
+            /*
+             * A função forEach() executa um loop para percorrer os objetos.
+             */
+
+            // arr.forEach(function(elemento, index, arr){
+            //     console.log('elemento: ', elemento);
+            //     console.log('index: ', index);
+            //     console.log('array: ', arr);
+            //     console.log('array: ', arr.toString());
+            // });
+
+            /*
+             * A função indexOf() busca no array a posição de um elemento 
+             * passado por parâmetro. Outro parâmetro também pode ser passado.
+             * Passamos a posição em que queremos que a verificação comece. Se
+             * não encontrar o elemento é retornado '-1'.
+             */
+
+            // var posicao = arr.indexOf('2', 3);
+            // console.log(posicao);
+
+            /*
+             * A função lastIndexOf() busca no array a posição de um elemento 
+             * passado por parâmetro da mesma forma que a função anterior. 
+             * Sendo que neste é retornado a última ocorrência do elemento
+             * passado no parâmetro. Como no caso anterior, também podemos passar
+             * um segundo parâmetro para dizer que a verificação será a partir
+             * de um certo index.
+             */
+
+            // var posicao = arr.lastIndexOf(4);
+            // console.log(posicao);
+
+            /*
+             * A função length() retorna o tamanho do array.
+             */
+            
+            // var tamanhoDoArray = arr.length;
+            // console.log('O tamanho do array: '+tamanhoDoArray);
+
+            /* 
+             * O método some() é bem parecido com o método every().
+             * A diferênça é que o método some() retorna true se 
+             * tiver uma ocorrência.
+             *
+             * Essa função recebe uma outra função de callback e
+             * pode receber por parâmetro o elemento que é o que está
+             * na posição do array, o index do array e o objeto que é
+             * o próprio array.
+             */
+            //  var soMenosUmNumero = arr.some(function(element){
+            //     return typeof element === 'number';
+            // });  
+
+            // console.log('Existe algum elemento do tipo number? '+soMenosUmNumero);
+        </script>
+    </head>
+    <body>
+        <h1>Curso Javascript Completo 2018</h1> 
+        
+        
+    </body>
+</html>
