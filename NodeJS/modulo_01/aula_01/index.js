@@ -1,11 +1,13 @@
-function obterUsuario(callback) {
-    setTimeout(function(){
-        return callback(null, {
-            usuario_id: 1,
-            nome: 'Robson',
-            dt_nascimento: new Date()
-        });
-    }, 1000);
+function obterUsuario() {
+    return new Promise(function resolvePromise(resolve, reject) {
+        setTimeout(function(){
+            return resolve({
+                usuario_id: 1,
+                nome: 'Robson',
+                dt_nascimento: new Date()
+            });
+        }, 1000);
+    })
 }
 
 function obterTelefone(idUsuario, callback) {
@@ -27,6 +29,16 @@ function obterEndereco(idUsuario, callback) {
         })
     });
 }
+
+const usuarioPromise = obterUsuario();
+
+usuarioPromise
+    .then(function(res) {
+        console.log('resultado: ', res);
+    })
+    .catch(function(err) {
+        console.error('Deu Merda: ', err);
+    });
 
 // obterUsuario(function resolverUsuario(err, usuario){
 //     if(err){
